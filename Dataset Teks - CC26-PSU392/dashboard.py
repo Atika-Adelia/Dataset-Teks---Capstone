@@ -37,7 +37,8 @@ def load_data():
 
 df_raw = load_data()
 
-df_raw['label_emosi'] = df_raw['label_emosi'].astype(str).str.strip().str.lower()
+if not df_raw.empty:
+    df_raw['label_emosi'] = df_raw['label_emosi'].astype(str).str.strip().str.lower()
 
 # Sidebar
 st.sidebar.image("logo.png", use_container_width=True)
