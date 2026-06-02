@@ -1,6 +1,2 @@
-streamlit
-pandas
-matplotlib
-wordcloud
-nltk
-openpyxl
+python3-matplotlib
+python3-pandas
